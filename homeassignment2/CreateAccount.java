@@ -13,7 +13,7 @@ public class CreateAccount {
     public static void main(String[] args) {
         ChromeOptions opt = new ChromeOptions();
         opt.addArguments("guest");
-        ChromeDriver driver = new ChromeDriver();
+        ChromeDriver driver = new ChromeDriver(opt);
 
         // Load the URL
         driver.get("http://leaftaps.com/opentaps/control/main");
@@ -94,3 +94,4 @@ public class CreateAccount {
 
     }
 }
+
