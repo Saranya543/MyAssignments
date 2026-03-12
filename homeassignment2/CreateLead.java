@@ -11,7 +11,7 @@ public class CreateLead {
 public static void main(String[] args) {
         ChromeOptions opt = new ChromeOptions();
         opt.addArguments("guest");
-        ChromeDriver driver = new ChromeDriver();
+        ChromeDriver driver = new ChromeDriver(opt);
         driver.get("http://leaftaps.com/opentaps/control/main");
         driver.manage().window().maximize();
 
@@ -62,3 +62,4 @@ public static void main(String[] args) {
     }
 
 }
+
